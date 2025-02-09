@@ -17,3 +17,16 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::middleware('auth:api')->post('/posts', function (Request $request) {
+    $post = App\Post::create([
+        'content' => $request->content,
+        'user_id' => auth()->id(),
+    ]);
+
+    return response($post, 201);
+});
+
+Route::get('/posts', function (Request $request) {
+    return App\Post::with('author')->orderBy('created_at', 'desc')->get();
+});
