@@ -1,6 +1,6 @@
 # Example Legacy Project
 
-This project is the companion code for [franklinstrube.com/blog/inertia-vue-rollup](https://franklinstrube.com/blog/inertia-vue-rolloup.
+This project is the companion code for [franklinstrube.com/blog/inertia-vue-rollup](https://franklinstrube.com/blog/inertia-vue-rolloup).
 
 ## Prerequisites
 
