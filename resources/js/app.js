@@ -6,7 +6,7 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+window.Vue = require('vue/dist/vue.common.js');
 
 /**
  * The following block of code may be used to automatically register your
